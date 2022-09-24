@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>FlyBox - Order</title>
+ </head>
+ <body>
+    <!-- Navabar-->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark py-5 navbar-style"> <!--py-3 padding-->
+      <div class="container">
+          <a href="#" class="navbar-brand">FlyBox</a>
+
+          <button class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a href="#order" class="nav-link">Safety</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#cost" class="nav-link">Cost</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#order" class="nav-link">Order</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      
+  </nav>
+
+    <!-- Boxes -->
+    <section class="bg-light text-dark p-3 text-center text-sm-start">
+      <div class="container size-of-the-box">
+          <h2 class="text-center">Choose size</h1>
+            <div class="row">
+              <div class="col">
+            <div class="polaroid">
+              <img src="img/medium.png" style="width:50%">
+              <div class="container">
+                <p>9,27" x 9,27" x 9,27"</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="polaroid">
+              <img src="img/medium.png" style="width:75%">
+              <div class="container">
+                <p>11,69" x 11,69" x 11,69"</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="polaroid">
+              <img src="img/medium.png" style="width:100%">
+              <div class="container">
+                <p>23,39" x 23,39" x 23,39"</p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+
+    </section>
+    <section class="bg-primary text-light p-3 text-center text-sm-start">
+        <div class="container pick-the-station">
+            <h2 class="text-center">Pick the station</h1>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>station location</option>
+                <option value="1">Location One</option>
+                <option value="2">Location Two</option>
+                <option value="3">Location Three</option>
+              </select>
+        </div>
+    </section>
+
+    <!-- User Info -->
+
+    <section>
+        <div class="container p-4">
+        <form class="row g-3 needs-validation text-sm-start" novalidate>
+            <div class="col-md-4">
+              <label for="name" class="form-label">First name</label>
+              <input type="text" class="form-control"  pattern="[a-z]{1,20}" required  maxlength="20">
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="surname" class="form-label">Last name</label>
+              <input type="text" class="form-control" pattern="[a-z]{1,20}" required  maxlength="25">
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="email" class="form-label">E-mail</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" pattern="^$|^.*@.*\.[a-z]{2,4}" required  maxlength="30">
+                <div class="invalid-feedback">
+                  Please provide a valid e-mail.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="cardnum" class="form-label">Card Number</label>
+              <input type="text" class="form-control" pattern="\d{16}" required minlength="16" maxlength="16">
+              <div class="invalid-feedback">
+                Please provide a valid card number.
+              </div>
+            </div>
+            <div class="col-md-3 cvc-input">
+              <label for="cvc" class="form-label">CVC/CVV</label>
+              <input type="text" class="form-control" required maxlength="3" minlength="3">
+              <div class="invalid-feedback">
+                Please provide a valid CVC/CVV.
+              </div>
+            </div>
+            <div class="col-md-3">
+                <label for="date" class="form-label">Validation</label>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <select class="form-select" required>
+                                <option selected disabled value="">Month</option>
+                                <option>Jan</option>
+                                <option>Feb</option>
+                                <option>Mar</option>
+                                <option>Apr</option>
+                                <option>May</option>
+                                <option>Jun</option>
+                                <option>Jul</option>
+                                <option>Aug</option>
+                                <option>Sep</option>
+                                <option>Oct</option>
+                                <option>Nov</option>
+                                <option>Dec</option>
+                              </select>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" required>
+                                <option selected disabled value="">Year</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                                <option>2026</option>
+                                <option>2027</option>
+                                <option>2028</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback">
+                        Please select the right validation date.
+                      </div>
+                </div>
+              </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 text-center">
+              <button class="btn btn-primary fs-2" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+    </section>
