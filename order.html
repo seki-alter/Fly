@@ -24,13 +24,13 @@
           <div class="collapse navbar-collapse">
               <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                      <a href="#order" class="nav-link">Safety</a>
+                      <a href="#safety" class="nav-link" onclick="location.href = 'safety.html'">Safety</a>
                   </li>
                   <li class="nav-item">
-                      <a href="#cost" class="nav-link">Cost</a>
+                      <a href="#cost" class="nav-link" onclick="location.href = 'pricing.html'">Pricing</a>
                   </li>
                   <li class="nav-item">
-                      <a href="#order" class="nav-link">Order</a>
+                      <a href="#order" class="nav-link" onclick="location.href = 'order.html'">Order</a>
                   </li>
               </ul>
           </div>
@@ -39,39 +39,46 @@
   </nav>
 
     <!-- Boxes -->
-    <section class="bg-light text-dark p-3 text-center text-sm-start">
-      <div class="container size-of-the-box">
+
+
+
+    <section class="bg-light text-dark p-3 text-center text-sm-start size-box" >
+      <div class="container size-picker">
           <h2 class="text-center">Choose size</h1>
             <div class="row">
-              <div class="col">
-            <div class="polaroid">
-              <img src="img/medium.png" style="width:50%">
-              <div class="container">
-                <p>9,27" x 9,27" x 9,27"</p>
-              </div>
-            </div>
-          </div>
+
           <div class="col">
             <div class="polaroid">
-              <img src="img/medium.png" style="width:75%">
               <div class="container">
-                <p>11,69" x 11,69" x 11,69"</p>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio1">9,27" x 9,27" x 9,27"</label>
               </div>
             </div>
           </div>
+
           <div class="col">
             <div class="polaroid">
-              <img src="img/medium.png" style="width:100%">
               <div class="container">
-                <p>23,39" x 23,39" x 23,39"</p>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio2">11,69" x 11,69" x 11,69"</label>
               </div>
             </div>
           </div>
+
+          <div class="col">
+            <div class="polaroid">
+              <div class="container">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio3">23,39" x 23,39" x 23,39"</label>
+              </div>
+            </div>
+          </div>
+
       </div>
   </section>
 
     </section>
-    <section class="bg-primary text-light p-3 text-center text-sm-start">
+    <section class="bg-primary text-light p-3 text-center text-sm-start station-pick">
         <div class="container pick-the-station">
             <h2 class="text-center">Pick the station</h1>
             <select class="form-select" aria-label="Default select example">
@@ -83,9 +90,10 @@
         </div>
     </section>
 
+
     <!-- User Info -->
 
-    <section>
+    <section class="user-info">
         <div class="container p-4">
         <form class="row g-3 needs-validation text-sm-start" novalidate>
             <div class="col-md-4">
@@ -182,3 +190,9 @@
           </form>
         </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <a href="#" class="top" >Back to Top &#8593;</a>
+
+    </body>
