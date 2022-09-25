@@ -23,30 +23,3 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-///////////////////////////////////////////////////
-
-// Form Validation RegEx
-
-
-let name = document.getElementById("name")
-let surname = document.getElementById("surname")
-let email = document.getElementById("email")
-let cardnumber = document.getElementById("cardnum");
-let cvc = document.getElementById("cvc")
-
-
-
-
-
-
-//const re1 = 
-//const re2 = 
-//const re3 =
-// const re4 = /\d{16}/;
-
-// function testCardnumber(cardnumberInput) {
-//   const ok = re.exec(cardnumberInput.value);
-
-//   output.textContent = 
-// }
